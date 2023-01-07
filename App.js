@@ -1,14 +1,16 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import Views from './src/screens/Views';
 import Buttons from './src/screens/Buttons';
+import FlatListExample from './src/screens/FlatList';
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <View>
       <Views />
       <Buttons />
+      <FlatListExample />
       <StatusBar style="auto" />
     </View>
   );
